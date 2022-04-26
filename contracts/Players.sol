@@ -21,3 +21,30 @@ Team Contract
 
 // Score -> Top 10 
 
+contract Player {
+
+    mapping(PlayerDetails => score) public playerScoreMapping;
+
+    enum playerSkill{ 
+        Captain, ViceCaptain, Batsman, Bowler, Fielder
+    }
+    struct PlayerDetails {
+        uint playerId;
+        string playerName;
+        uint256 price;
+        string team;
+        playerSkill skill;
+    }
+
+
+    constructor(){
+        this.playerStats = new PlayerStats();
+    }
+    
+    // Register Player
+
+
+
+    // Get player stats
+
+}
